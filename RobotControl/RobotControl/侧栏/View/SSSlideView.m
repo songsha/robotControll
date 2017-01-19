@@ -40,6 +40,8 @@
 //    [self addSubview:button];
     
     
+
+    
     _imgbg=[[UIImageView alloc]init];
     [self addSubview:_imgbg];
        [_imgbg mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,7 +61,7 @@
     [_headImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(_imgbg);
         make.centerY.equalTo(_imgbg);
-        make.height.width.equalTo(@(BGHEIGHT/3));
+        make.height.width.equalTo(@(BGHEIGHT/2.5));
     }];
     
     _nameLabel=[[UILabel alloc]init];
@@ -120,7 +122,10 @@
     self.backgroundColor=sColor(28, 125, 250);
     UITapGestureRecognizer * tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(move)];
     [self addGestureRecognizer:tap];
-
+    _shadowView=[[UIView alloc]initWithFrame:self.frame];
+    _shadowView.backgroundColor=[UIColor blackColor];
+    _shadowView.userInteractionEnabled=NO;
+    [self addSubview:_shadowView];
 }
 //-(void)pushtoDetail{
 // [self.tabdelegate changeview];
@@ -165,10 +170,17 @@
     UITableViewCell * cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     cell.textLabel.text=[NSString stringWithFormat:@"%@%@",_titleArray[indexPath.row],@"8888888"];
-    cell.textLabel.font=[UIFont systemFontOfSize:13];
+    cell.textLabel.font=[UIFont systemFontOfSize:15];
     cell.backgroundColor=sColor(28, 125, 250);
     cell.textLabel.alpha=0.8;
     return cell;
+}
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return 50;
+
 }
 
 @end

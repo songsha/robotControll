@@ -23,35 +23,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-Ea-JRo">
-                    <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                    <rect key="frame" x="0.0" y="64" width="375" height="180"/>
                     <color key="backgroundColor" red="0.11372549019607843" green="0.4823529411764706" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="8LX-hm-7KM"/>
+                        <constraint firstAttribute="height" constant="180" id="8LX-hm-7KM"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_voltage_dail" translatesAutoresizingMaskIntoConstraints="NO" id="scK-qI-edO">
-                    <rect key="frame" x="29" y="74" width="130" height="130"/>
+                    <rect key="frame" x="14" y="74" width="160" height="160"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="scK-qI-edO" secondAttribute="height" multiplier="1:1" id="DJ9-ec-iT8"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smart_tv_big_round_bg" translatesAutoresizingMaskIntoConstraints="NO" id="r47-cy-yvK">
-                    <rect key="frame" x="217" y="74" width="130" height="130"/>
+                    <rect key="frame" x="202" y="74" width="160" height="160"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="r47-cy-yvK" secondAttribute="height" multiplier="1:1" id="XtR-Nc-kRe"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电池电量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAt-vQ-jvE">
-                    <rect key="frame" x="259" y="153" width="45" height="14"/>
+                    <rect key="frame" x="259" y="170.5" width="45" height="14"/>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ran-0I-hFa">
-                    <rect key="frame" x="262" y="122" width="40" height="31"/>
+                    <rect key="frame" x="247" y="137" width="70" height="31"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="gNu-Dv-gR2"/>
                     </constraints>
@@ -60,7 +60,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCt-tl-b61">
-                    <rect key="frame" x="312" y="127" width="20" height="21"/>
+                    <rect key="frame" x="327" y="142" width="20" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="20" id="JJv-1P-bQM"/>
                     </constraints>
@@ -68,16 +68,16 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxu-Yb-7Wf">
+                    <rect key="frame" x="0.0" y="244" width="375" height="379"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.86274509803921573" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_voltage_pointer" translatesAutoresizingMaskIntoConstraints="NO" id="7dV-bm-jHu">
-                    <rect key="frame" x="29" y="74" width="130" height="130"/>
+                    <rect key="frame" x="14" y="74" width="160" height="160"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="7dV-bm-jHu" secondAttribute="height" multiplier="1:1" id="vTy-Nh-3cw"/>
                     </constraints>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxu-Yb-7Wf">
-                    <rect key="frame" x="0.0" y="214" width="375" height="409"/>
-                    <color key="backgroundColor" red="0.84313725490196079" green="0.86274509803921573" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
-                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -87,7 +87,7 @@
                 <constraint firstAttribute="trailing" secondItem="Mbt-Ea-JRo" secondAttribute="trailing" id="4Z7-fu-52w"/>
                 <constraint firstItem="ran-0I-hFa" firstAttribute="leading" secondItem="r47-cy-yvK" secondAttribute="leading" constant="45" id="5mN-2P-xyF"/>
                 <constraint firstItem="Mbt-Ea-JRo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5z4-t2-ugq"/>
-                <constraint firstItem="Lxu-Yb-7Wf" firstAttribute="top" secondItem="Mbt-Ea-JRo" secondAttribute="top" constant="150" id="7LO-X7-3cw"/>
+                <constraint firstItem="Lxu-Yb-7Wf" firstAttribute="top" secondItem="Mbt-Ea-JRo" secondAttribute="top" constant="180" id="7LO-X7-3cw"/>
                 <constraint firstItem="ran-0I-hFa" firstAttribute="centerX" secondItem="r47-cy-yvK" secondAttribute="centerX" id="7Z3-EH-8zw"/>
                 <constraint firstItem="7dV-bm-jHu" firstAttribute="centerX" secondItem="scK-qI-edO" secondAttribute="centerX" id="GZ7-DN-lyz"/>
                 <constraint firstItem="scK-qI-edO" firstAttribute="centerY" secondItem="Mbt-Ea-JRo" secondAttribute="centerY" id="H3R-J7-lgF"/>

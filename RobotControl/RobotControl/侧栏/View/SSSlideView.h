@@ -22,6 +22,7 @@
 @property (nonatomic,strong)UITableView * infoTable;
 @property (nonatomic,strong) UIButton * setButton;
 @property (nonatomic,copy)NSArray * titleArray;
+@property (nonatomic,strong) UIView * shadowView;
 
 
 

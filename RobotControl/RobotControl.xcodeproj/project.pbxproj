@@ -11,6 +11,10 @@
 		184F759C1E2CC4F900786379 /* SSTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F759A1E2CC4F900786379 /* SSTipViewController.m */; };
 		184F759D1E2CC4F900786379 /* SSTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F759B1E2CC4F900786379 /* SSTipViewController.xib */; };
 		184F75BC1E2CE3EF00786379 /* SSInfoTableHeadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F75BB1E2CE3EF00786379 /* SSInfoTableHeadButton.m */; };
+		18510DE31E30CDF900E5FE48 /* SSTipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18510DE11E30CDF900E5FE48 /* SSTipTableViewCell.m */; };
+		18510DE41E30CDF900E5FE48 /* SSTipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18510DE21E30CDF900E5FE48 /* SSTipTableViewCell.xib */; };
+		18510DE61E30D56F00E5FE48 /* SSAddTipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18510DE51E30D56F00E5FE48 /* SSAddTipView.xib */; };
+		18510DE91E30D5D400E5FE48 /* SSAddTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18510DE81E30D5D400E5FE48 /* SSAddTipView.m */; };
 		185867871E271E85000A57C0 /* SSRobotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858676D1E271E85000A57C0 /* SSRobotDetailViewController.m */; };
 		185867881E271E85000A57C0 /* SSSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185867711E271E85000A57C0 /* SSSlideView.m */; };
 		1858678A1E271E85000A57C0 /* SSFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858677B1E271E85000A57C0 /* SSFunctionViewController.m */; };
@@ -62,6 +66,12 @@
 		184F759B1E2CC4F900786379 /* SSTipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSTipViewController.xib; sourceTree = "<group>"; };
 		184F75BA1E2CE3EF00786379 /* SSInfoTableHeadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSInfoTableHeadButton.h; sourceTree = "<group>"; };
 		184F75BB1E2CE3EF00786379 /* SSInfoTableHeadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSInfoTableHeadButton.m; sourceTree = "<group>"; };
+		18510DE01E30CDF900E5FE48 /* SSTipTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTipTableViewCell.h; sourceTree = "<group>"; };
+		18510DE11E30CDF900E5FE48 /* SSTipTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTipTableViewCell.m; sourceTree = "<group>"; };
+		18510DE21E30CDF900E5FE48 /* SSTipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSTipTableViewCell.xib; sourceTree = "<group>"; };
+		18510DE51E30D56F00E5FE48 /* SSAddTipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SSAddTipView.xib; path = ../Controller/SSAddTipView.xib; sourceTree = "<group>"; };
+		18510DE71E30D5D400E5FE48 /* SSAddTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAddTipView.h; sourceTree = "<group>"; };
+		18510DE81E30D5D400E5FE48 /* SSAddTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAddTipView.m; sourceTree = "<group>"; };
 		1858676C1E271E85000A57C0 /* SSRobotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRobotDetailViewController.h; sourceTree = "<group>"; };
 		1858676D1E271E85000A57C0 /* SSRobotDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRobotDetailViewController.m; sourceTree = "<group>"; };
 		185867701E271E85000A57C0 /* SSSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSlideView.h; sourceTree = "<group>"; };
@@ -176,6 +186,12 @@
 		184F75981E2CC4E000786379 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18510DE51E30D56F00E5FE48 /* SSAddTipView.xib */,
+				18510DE01E30CDF900E5FE48 /* SSTipTableViewCell.h */,
+				18510DE11E30CDF900E5FE48 /* SSTipTableViewCell.m */,
+				18510DE21E30CDF900E5FE48 /* SSTipTableViewCell.xib */,
+				18510DE71E30D5D400E5FE48 /* SSAddTipView.h */,
+				18510DE81E30D5D400E5FE48 /* SSAddTipView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -796,8 +812,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18510DE61E30D56F00E5FE48 /* SSAddTipView.xib in Resources */,
 				185867951E275D4A000A57C0 /* SSLoginViewController.xib in Resources */,
 				18628D161E2DE9F200E01C5E /* SSSetViewController.xib in Resources */,
+				18510DE41E30CDF900E5FE48 /* SSTipTableViewCell.xib in Resources */,
 				1858679E1E2795CD000A57C0 /* SSRegistMemberViewController.xib in Resources */,
 				1871F38A1E28CB72006B423B /* SSHomePageViewController.xib in Resources */,
 				185DC0C41E1C8A46009C0395 /* LaunchScreen.storyboard in Resources */,
@@ -881,6 +899,7 @@
 				185867941E275D4A000A57C0 /* SSLoginViewController.m in Sources */,
 				185DC0B91E1C8A46009C0395 /* AppDelegate.m in Sources */,
 				185867881E271E85000A57C0 /* SSSlideView.m in Sources */,
+				18510DE31E30CDF900E5FE48 /* SSTipTableViewCell.m in Sources */,
 				18628D151E2DE9F200E01C5E /* SSSetViewController.m in Sources */,
 				185DC0B61E1C8A46009C0395 /* main.m in Sources */,
 				185867901E271EBC000A57C0 /* SSFuncViewController.m in Sources */,
@@ -889,6 +908,7 @@
 				185867871E271E85000A57C0 /* SSRobotDetailViewController.m in Sources */,
 				1858678C1E271E85000A57C0 /* SSMainViewController.m in Sources */,
 				1858678A1E271E85000A57C0 /* SSFunctionViewController.m in Sources */,
+				18510DE91E30D5D400E5FE48 /* SSAddTipView.m in Sources */,
 				184F75BC1E2CE3EF00786379 /* SSInfoTableHeadButton.m in Sources */,
 				184F75931E2CB2E300786379 /* SSFuncButton.m in Sources */,
 			);

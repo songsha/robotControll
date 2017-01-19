@@ -111,7 +111,7 @@
                 NSLog(@"=%f",-point.x );
                 if (-point.x>SCREENW-70) {
                     transitionView.frame=CGRectMake(0, 0, SCREENW, SCREENH);;
-                    
+                     delega.slidView.shadowView.alpha=1;
                     break;
                 }
                 //                if (-point.x<70) {
@@ -119,6 +119,7 @@
                 //                }
                 //                else
                 transitionView.frame=CGRectMake(SCREENW+point.x-70, 0, SCREENW, SCREENH);;
+                delega.slidView.shadowView.alpha=1-(SCREENW+point.x-70)/(CGFloat)SCREENW;
                 break;
             case UIGestureRecognizerStateEnded:
                 NSLog(@"手势结束");
@@ -126,9 +127,12 @@
                 NSLog(@"=%f",-point2.x );
                 if (-point2.x>100) {
                     transitionView.frame=CGRectMake(0, 0, SCREENW, SCREENH);;
+                    delega.slidView.shadowView.alpha=1;
                 }
                 else
-                    transitionView.frame=CGRectMake(SCREENW-70, 0, SCREENW, SCREENH);;
+                { transitionView.frame=CGRectMake(SCREENW-70, 0, SCREENW, SCREENH);;
+                   delega.slidView.shadowView.alpha=0;
+                }
                 break;
                 
             default:
@@ -167,7 +171,7 @@
                 NSLog(@"=%f",-point.x );
                 if (-point.x>SCREENW-70) {
                     transitionView.frame=CGRectMake(0, 0, SCREENW, SCREENH);;
-                    
+                    delega.slidView.shadowView.alpha=1;
                     break;
                 }
                 //                if (-point.x<70) {
@@ -175,6 +179,7 @@
                 //                }
                 //                else
                 transitionView.frame=CGRectMake(SCREENW+point.x-70, 0, SCREENW, SCREENH);;
+                delega.slidView.shadowView.alpha=(SCREENW+point.x-70)/(CGFloat)SCREENW;
                 break;
             case UIGestureRecognizerStateEnded:
                 NSLog(@"手势结束");
@@ -182,9 +187,12 @@
                 NSLog(@"=%f",-point2.x );
                 if (-point2.x>100) {
                     transitionView.frame=CGRectMake(0, 0, SCREENW, SCREENH);;
+                    delega.slidView.shadowView.alpha=1;
                 }
                 else
-                    transitionView.frame=CGRectMake(SCREENW-70, 0, SCREENW, SCREENH);;
+                {  transitionView.frame=CGRectMake(SCREENW-70, 0, SCREENW, SCREENH);;
+                    delega.slidView.shadowView.alpha=0;
+                }
                 break;
                 
             default:
@@ -197,6 +205,8 @@
 
 -(void)leftslid: (UIScreenEdgePanGestureRecognizer*)sender
 {
+    //向右展示左侧view
+    
     NSLog(@"SCREENW===%f",SCREENW);
     AppDelegate * delega=(AppDelegate *)[UIApplication sharedApplication].delegate;
     UIView * transitionView=[delega.window.subviews objectAtIndex:1];
@@ -213,10 +223,11 @@
                 NSLog(@"=%f",point.x );
                 if (point.x>SCREENW-70) {
                     transitionView.frame=CGRectMake(SCREENW-70, 0, SCREENW, SCREENH);;
-                    
+                    delega.slidView.shadowView.alpha=0;
                     break;
                 }
                 transitionView.frame=CGRectMake(point.x, 0, SCREENW, SCREENH);;
+                delega.slidView.shadowView.alpha=1-(point.x)/(CGFloat)SCREENW;
                 break;
             case UIGestureRecognizerStateEnded:
                 NSLog(@"手势结束");
@@ -224,9 +235,13 @@
                 NSLog(@"=%f",point2.x );
                 if (point2.x>100) {
                     transitionView.frame=CGRectMake(SCREENW-70, 0, SCREENW, SCREENH);;
+                    delega.slidView.shadowView.alpha=0;
                 }
                 else
-                    transitionView.frame=CGRectMake(0, 0, SCREENW, SCREENH);;
+                {
+                 transitionView.frame=CGRectMake(0, 0, SCREENW, SCREENH);;
+                 delega.slidView.shadowView.alpha=1;
+                }
                 break;
                 
             default:

@@ -59,8 +59,19 @@
 }
 
 -(void)back{
-    [self.navigationController popViewControllerAnimated:NO];
+    //    [self.navigationController popViewControllerAnimated:NO];
+    AppDelegate * delega=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    UIView * transitionView=[delega.window.subviews objectAtIndex:1];
     
+    if(transitionView.frame.origin.x==0){
+        transitionView.frame=CGRectMake(SCREENW-70, 0, SCREENW, SCREENH);
+        delega.slidView.shadowView.alpha=0;
+    }
+    else
+    { transitionView.frame=CGRectMake(0, 0, SCREENW, SCREENH);
+        delega.slidView.shadowView.alpha=0;
+
+    }
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

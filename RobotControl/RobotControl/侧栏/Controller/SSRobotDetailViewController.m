@@ -67,6 +67,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
+    [self createUI];
+}
+
+-(void)createUI{
+    
+    
+    _robotbgLabel=[[UILabel alloc]initWithFrame:CGRectMake(15, 90, SCREENW-30, 70)];
+    _robotbgLabel.backgroundColor=THEMECOLOR;
+    _robotbgLabel.layer.cornerRadius=5;
+    _robotbgLabel.layer.masksToBounds=YES;
+    _robotnameLabel=[[UILabel alloc]initWithFrame:CGRectMake(5, 5, SCREENW-40, 30)];
+    _robotnameLabel.text=@"昵称:8888888";
+    _robotnameLabel.font=[UIFont systemFontOfSize:15];
+    [_robotbgLabel addSubview:_robotnameLabel];
+    
+    _robotnoLabel=[[UILabel alloc]initWithFrame:CGRectMake(5, 35, SCREENW-40, 30)];
+    _robotnoLabel.text=@"序列号:88873782929786";
+    _robotnoLabel.font=[UIFont systemFontOfSize:15];
+    _robotnoLabel.textColor=[UIColor grayColor];
+    [_robotbgLabel addSubview:_robotnoLabel];
+    
+    
+    UIImageView * img=[[UIImageView alloc]initWithFrame:CGRectMake(SCREENW-40-35, 20, 30, 30)];
+    img.image=[UIImage imageNamed:@"phone_uncheck"];
+    [_robotbgLabel addSubview:img];
+    
+    [self.view addSubview:_robotbgLabel];
+
 }
 
 - (void)didReceiveMemoryWarning {
