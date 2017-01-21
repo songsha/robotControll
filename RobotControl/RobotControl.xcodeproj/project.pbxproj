@@ -25,6 +25,11 @@
 		185867951E275D4A000A57C0 /* SSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185867931E275D4A000A57C0 /* SSLoginViewController.xib */; };
 		1858679D1E2795CD000A57C0 /* SSRegistMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858679B1E2795CD000A57C0 /* SSRegistMemberViewController.m */; };
 		1858679E1E2795CD000A57C0 /* SSRegistMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1858679C1E2795CD000A57C0 /* SSRegistMemberViewController.xib */; };
+		1858B0A81E3200280006331B /* SSTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858B0A71E3200280006331B /* SSTipModel.m */; };
+		1858B0AC1E3207250006331B /* SSFamilyNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858B0AA1E3207250006331B /* SSFamilyNumViewController.m */; };
+		1858B0AD1E3207250006331B /* SSFamilyNumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1858B0AB1E3207250006331B /* SSFamilyNumViewController.xib */; };
+		1858B0B11E32074B0006331B /* SSFamilyNumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858B0AF1E32074B0006331B /* SSFamilyNumTableViewCell.m */; };
+		1858B0B21E32074B0006331B /* SSFamilyNumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1858B0B01E32074B0006331B /* SSFamilyNumTableViewCell.xib */; };
 		185DC0B61E1C8A46009C0395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185DC0B51E1C8A46009C0395 /* main.m */; };
 		185DC0B91E1C8A46009C0395 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185DC0B81E1C8A46009C0395 /* AppDelegate.m */; };
 		185DC0BF1E1C8A46009C0395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185DC0BD1E1C8A46009C0395 /* Main.storyboard */; };
@@ -90,6 +95,14 @@
 		1858679A1E2795CD000A57C0 /* SSRegistMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRegistMemberViewController.h; sourceTree = "<group>"; };
 		1858679B1E2795CD000A57C0 /* SSRegistMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRegistMemberViewController.m; sourceTree = "<group>"; };
 		1858679C1E2795CD000A57C0 /* SSRegistMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSRegistMemberViewController.xib; sourceTree = "<group>"; };
+		1858B0A61E3200280006331B /* SSTipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTipModel.h; sourceTree = "<group>"; };
+		1858B0A71E3200280006331B /* SSTipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTipModel.m; sourceTree = "<group>"; };
+		1858B0A91E3207250006331B /* SSFamilyNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFamilyNumViewController.h; sourceTree = "<group>"; };
+		1858B0AA1E3207250006331B /* SSFamilyNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFamilyNumViewController.m; sourceTree = "<group>"; };
+		1858B0AB1E3207250006331B /* SSFamilyNumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFamilyNumViewController.xib; sourceTree = "<group>"; };
+		1858B0AE1E32074B0006331B /* SSFamilyNumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFamilyNumTableViewCell.h; sourceTree = "<group>"; };
+		1858B0AF1E32074B0006331B /* SSFamilyNumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFamilyNumTableViewCell.m; sourceTree = "<group>"; };
+		1858B0B01E32074B0006331B /* SSFamilyNumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFamilyNumTableViewCell.xib; sourceTree = "<group>"; };
 		185DC0B11E1C8A46009C0395 /* RobotControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185DC0B51E1C8A46009C0395 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185DC0B71E1C8A46009C0395 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -179,6 +192,8 @@
 		184F75971E2CC4E000786379 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1858B0A61E3200280006331B /* SSTipModel.h */,
+				1858B0A71E3200280006331B /* SSTipModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,6 +317,9 @@
 		184F75AB1E2CC6D200786379 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1858B0A91E3207250006331B /* SSFamilyNumViewController.h */,
+				1858B0AA1E3207250006331B /* SSFamilyNumViewController.m */,
+				1858B0AB1E3207250006331B /* SSFamilyNumViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -316,6 +334,9 @@
 		184F75AD1E2CC6D200786379 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1858B0AE1E32074B0006331B /* SSFamilyNumTableViewCell.h */,
+				1858B0AF1E32074B0006331B /* SSFamilyNumTableViewCell.m */,
+				1858B0B01E32074B0006331B /* SSFamilyNumTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -820,7 +841,9 @@
 				1871F38A1E28CB72006B423B /* SSHomePageViewController.xib in Resources */,
 				185DC0C41E1C8A46009C0395 /* LaunchScreen.storyboard in Resources */,
 				185DC0C11E1C8A46009C0395 /* Assets.xcassets in Resources */,
+				1858B0B21E32074B0006331B /* SSFamilyNumTableViewCell.xib in Resources */,
 				184F759D1E2CC4F900786379 /* SSTipViewController.xib in Resources */,
+				1858B0AD1E3207250006331B /* SSFamilyNumViewController.xib in Resources */,
 				185DC0BF1E1C8A46009C0395 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -894,13 +917,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1858B0B11E32074B0006331B /* SSFamilyNumTableViewCell.m in Sources */,
 				1871F3891E28CB72006B423B /* SSHomePageViewController.m in Sources */,
 				1858678B1E271E85000A57C0 /* SSInformationViewController.m in Sources */,
 				185867941E275D4A000A57C0 /* SSLoginViewController.m in Sources */,
 				185DC0B91E1C8A46009C0395 /* AppDelegate.m in Sources */,
+				1858B0AC1E3207250006331B /* SSFamilyNumViewController.m in Sources */,
 				185867881E271E85000A57C0 /* SSSlideView.m in Sources */,
 				18510DE31E30CDF900E5FE48 /* SSTipTableViewCell.m in Sources */,
 				18628D151E2DE9F200E01C5E /* SSSetViewController.m in Sources */,
+				1858B0A81E3200280006331B /* SSTipModel.m in Sources */,
 				185DC0B61E1C8A46009C0395 /* main.m in Sources */,
 				185867901E271EBC000A57C0 /* SSFuncViewController.m in Sources */,
 				184F759C1E2CC4F900786379 /* SSTipViewController.m in Sources */,

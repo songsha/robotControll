@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSTipModel.h"
 
-@interface SSAddTipView : UIView<UIPickerViewDelegate,UIPickerViewDataSource>
+@protocol SSAddTipDelegate <NSObject>
+
+-(void)addTipWith:(SSTipModel *)model;
+
+@end
+
+
+@interface SSAddTipView : UIView<UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *navcLabel;
 
 @property (strong, nonatomic) IBOutlet UIButton *cancle;
@@ -19,4 +27,7 @@
 @property (nonatomic,copy)NSArray * array3;
 @property (nonatomic,copy)NSArray * array2;
 @property (nonatomic,strong) UIView * view;
+
+@property (nonatomic,weak) id <SSAddTipDelegate>mydelegate;
+
 @end

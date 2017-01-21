@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RobotControl/&#x9996;&#x9875;/Controller/SSFunctionViewController.m"
-            timestampString = "506423663.432375"
+            timestampString = "506597615.849971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "-back"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RobotControl/&#x9996;&#x9875;/Controller/SSFunctionViewController.m"
-            timestampString = "505989682.979231"
+            timestampString = "506597615.849971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-back"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RobotControl/&#x9996;&#x9875;/&#x529f;&#x80fd;/&#x65e5;&#x5e38;&#x63d0;&#x9192;/Controller/SSTipViewController.m"
-            timestampString = "506518504.980031"
+            timestampString = "506593831.764683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "-addtip"
             landmarkType = "7">
          </BreakpointContent>
@@ -320,6 +320,22 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "-initWithFrame:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RobotControl/&#x9996;&#x9875;/&#x529f;&#x80fd;/&#x65e5;&#x5e38;&#x63d0;&#x9192;/View/SSAddTipView.m"
+            timestampString = "506594506.794346"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-textFieldShouldReturn:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

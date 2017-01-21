@@ -1,22 +1,20 @@
 //
-//  SSTipTableViewCell.m
+//  SSFamilyNumTableViewCell.m
 //  RobotControl
 //
-//  Created by apple on 17/1/19.
+//  Created by apple on 17/1/20.
 //  Copyright © 2017年 ss. All rights reserved.
 //
 
-#import "SSTipTableViewCell.h"
+#import "SSFamilyNumTableViewCell.h"
 
-@implementation SSTipTableViewCell
+@implementation SSFamilyNumTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
 }
-- (IBAction)TipisOn:(UISwitch *)sender {
-    
-    _model.isOn=sender.isOn;
+- (IBAction)setNum:(UIButton *)sender {
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

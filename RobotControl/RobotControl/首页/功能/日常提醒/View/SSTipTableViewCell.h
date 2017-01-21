@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSTipModel.h"
+
 
 @interface SSTipTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UISwitch *isOn;
-
+@property (nonatomic,strong)SSTipModel * model;
 @end

@@ -60,6 +60,9 @@
                     <state key="normal" title="保存">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="save:" destination="iN0-l3-epB" eventType="touchUpInside" id="AYo-nA-ygq"/>
+                    </connections>
                 </button>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFW-hR-Ep1">
                     <rect key="frame" x="0.0" y="64" width="375" height="200"/>

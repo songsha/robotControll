@@ -9,6 +9,7 @@
 #import "SSFunctionViewController.h"
 #import "AppDelegate.h"
 #import "SSRobotDetailViewController.h"
+#import "SSFamilyNumViewController.h"
 
 @interface SSFunctionViewController ()<SSTabChangeDelegate>
 {
@@ -67,7 +68,10 @@
         
     }
 }
+-(void)pushtoSet{
 
+
+}
 //-(void)viewDidAppear:(BOOL)animated{
 //    [super viewDidAppear:animated];
 //    

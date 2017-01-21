@@ -10,11 +10,13 @@
 #import "SSTipTableViewCell.h"
 #import "SSAddTipView.h"
 #import "AppDelegate.h"
+#import "SSTipModel.h"
 
-@interface SSTipViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface SSTipViewController ()<UITableViewDelegate,UITableViewDataSource,SSAddTipDelegate>
 
 @property (nonatomic,strong)UITableView * tableview;
 @property (nonatomic,strong)SSAddTipView * tipview;
+@property (nonatomic,strong)NSMutableArray * dateSource;
 @end
 
 @implementation SSTipViewController
@@ -78,8 +80,17 @@
 //    _tipview.backgroundColor=[UIColor blueColor];
 //    _tipview.frame=CGRectMake(0, 0, SCREENW, SCREENH);
 //    [self.view addSubview:_tipview];
+    
+    _tipview.mydelegate=self;
     [delegate.window addSubview:_tipview];
 
+
+}
+
+-(void)addTipWith:(SSTipModel *)model;{
+
+    [_dateSource addObject:model];
+    [_tableview reloadData];
 
 }
 -(void)back{
@@ -89,10 +100,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self createUI];
+    [self createDateSource];
 }
 -(void)createUI{
-
+   
     _tableview=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREENW, SCREENH) style:UITableViewStylePlain];
     _tableview.dataSource=self;
     _tableview.delegate=self;
@@ -102,10 +113,23 @@
 
 }
 
+-(void)createDateSource{
+
+   _dateSource=[[NSMutableArray alloc]init];
+    SSTipModel * model=[[SSTipModel alloc]init];
+    model.time=@"12:23";
+    model.name=@"闹钟";
+    model.isOn=YES;
+    [_dateSource addObject:model];
+    [self createUI];
+
+
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
 
-    return 1;
+    return _dateSource.count;
 
 }
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -113,10 +137,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    UITableViewCell * cell=[tableView dequeueReusableCellWithIdentifier:@"SSTipTableViewCell"];
+    SSTipModel * model=_dateSource[indexPath.row];
+    SSTipTableViewCell * cell=[tableView dequeueReusableCellWithIdentifier:@"SSTipTableViewCell"];
     if (!cell) {
         cell=[[[UINib nibWithNibName:@"SSTipTableViewCell" bundle:nil] instantiateWithOwner:self options:nil]lastObject];
     }
+    cell.nameLabel.text=model.name;
+    [cell.isOn setOn:model.isOn];
+    cell.timeLabel.text=model.time;
+    cell.model=model;
     return cell;
 }
 

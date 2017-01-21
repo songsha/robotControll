@@ -11,6 +11,7 @@
 #import "SSRobotDetailViewController.h"
 #import "SSTipViewController.h"
 #import "SSSetViewController.h"
+#import "SSFamilyNumViewController.h"
 
 @interface SSHomePageViewController ()<SSTabChangeDelegate>
 @property (nonatomic,copy)NSArray * nameArray;
@@ -122,16 +123,29 @@
 
 -(void)funcWithTag:(UIButton *)button{
 
-    SSTipViewController * tip=[[SSTipViewController alloc]init];
-    [self.navigationController pushViewController:tip animated:NO];
+//    SSTipViewController * tip=[[SSTipViewController alloc]init];
+//    [self.navigationController pushViewController:tip animated:NO];
     
     switch (button.tag) {
-        case 100:
-            
+        case 103:
+        {  SSTipViewController * tip=[[SSTipViewController alloc]init];
+            [self.navigationController pushViewController:tip animated:NO];
+
             break;
-            
+        }
+        case 104:
+        {
+            SSFamilyNumViewController * family=[[SSFamilyNumViewController alloc]init];
+             [self.navigationController pushViewController:family animated:NO];
+            break;
+        }
         default:
+        {
+            SSTipViewController * tip=[[SSTipViewController alloc]init];
+            [self.navigationController pushViewController:tip animated:NO];
+        
             break;
+    }
     }
     
     

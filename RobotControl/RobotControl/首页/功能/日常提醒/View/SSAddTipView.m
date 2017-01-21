@@ -31,15 +31,49 @@
     }
     return self;
 }
+
 -(void)createUI{
     _array2=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",nil];
     _array3=[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",nil];
     _picker.delegate=self;
     _picker.dataSource=self;
+    _tipname.returnKeyType=UIReturnKeyDone;
+    _tipname.delegate=self;
+    
 
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+
+    [_tipname resignFirstResponder];
+    return YES;
+
+}
+
 - (IBAction)cancle:(id)sender {
     [self removeFromSuperview];
+}
+- (IBAction)save:(UIButton *)sender {
+    
+    SSTipModel * model=[[SSTipModel alloc]init];
+    model.name=_tipname.text;
+    model.isOn=NO;
+    int select1=(int)[_picker selectedRowInComponent:0];
+    NSString * str=[_array2 objectAtIndex:select1];
+    int select2=(int)[_picker selectedRowInComponent:1];
+    NSString * str2=[_array3 objectAtIndex:select2];
+
+    NSMutableString * mutablestr=[[NSMutableString alloc]init];
+    [mutablestr appendString:str];
+    [mutablestr appendString:@":"];
+    [mutablestr appendString:str2];
+    
+    model.time=mutablestr;
+    
+    [_mydelegate addTipWith:model];
+    
+    [self removeFromSuperview];
+    
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
